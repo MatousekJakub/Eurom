@@ -1,0 +1,31 @@
+EuromBackend/vendor/
+EuromBackend/exports/
+
+EuromBackend/.DS_Store
+.DS_Store
+
+# Logs
+EuromFrontend/logs
+EuromFrontend/*.log
+EuromFrontend/npm-debug.log*
+EuromFrontend/yarn-debug.log*
+EuromFrontend/yarn-error.log*
+EuromFrontend/pnpm-debug.log*
+EuromFrontend/lerna-debug.log*
+
+EuromFrontend/node_modules
+EuromFrontend/dist-ssr
+EuromFrontend/*.local
+
+EuromFrontend/# Editor directories and files
+EuromFrontend/.vscode/*
+EuromFrontend/!.vscode/extensions.json
+EuromFrontend/.idea
+EuromFrontend/.DS_Store
+EuromFrontend/*.suo
+EuromFrontend/*.ntvs*
+EuromFrontend/*.njsproj
+EuromFrontend/*.sln
+EuromFrontend/*.sw?
+
+EuromFrontend/dist

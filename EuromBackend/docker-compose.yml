@@ -1,0 +1,31 @@
+version: '3.9'
+services:
+  php-apache:
+    ports:
+      - '80:80'
+    build: './build/php'
+    volumes:
+      - ./:/var/www/html
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    #restart: always
+    ports:
+      - 8080:80
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: passpass
+  mysql:
+    ports:
+      - '3306:3306'
+    build: './build/mysql'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'passpass'
+      MYSQL_DATABASE: 'euromdb'
+    volumes:
+      - dbData:/var/lib/mysql
+volumes:
+  app:
+  dbData:

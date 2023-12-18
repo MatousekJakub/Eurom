@@ -1,0 +1,35 @@
+{
+	"require": {
+		"slim/slim": "4.*",
+		"slim/psr7": "^1.6",
+		"firebase/php-jwt": "^6.3",
+		"php": "^8.1"
+	},
+	"autoload": {
+		"classmap": [
+			"app/"
+		]
+	},
+	"scripts": {
+		"generateKeys": [
+			"ssh-keygen -t rsa -b 4096 -m PEM -f key.pem"
+		],
+		"generateAll": [
+			"docker exec -i eurombackend-php-apache-1 /bin/bash -c \"php generator.php generateAll\"",
+			"composer dump-autoload"
+		],
+		"generateDBObjects": [
+			"docker exec -i eurombackend-php-apache-1 /bin/bash -c \"php generator.php generateDBObjects\"",
+			"composer dump-autoload"
+		],
+		"generateTS": [
+			"docker exec -i eurombackend-php-apache-1 /bin/bash -c \"php generator.php generateTS\"",
+			"composer dump-autoload"
+		],
+		"generateForced": [
+			"docker exec -i eurombackend-php-apache-1 /bin/bash -c \"php generator.php generateForced\"",
+			"composer dump-autoload"
+		]
+	}
+}
+
