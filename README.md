@@ -8,7 +8,7 @@ Clone / Download ZIP and extract
 ## Backend
 1. "cd" into EuromBackend `cd EuromBackend`
 2. Edit docker-compose.yml
-   - phpmyadmin <br>`MYSQL_USERNAME: root```<br>```MYSQL_ROOT_PASSWORD: passpass`
+   - phpmyadmin <br>`MYSQL_USERNAME: root`<br>`MYSQL_ROOT_PASSWORD: passpass`
    - mysql <br>`MYSQL_ROOT_PASSWORD: 'passpass'`<br>`
       MYSQL_DATABASE: 'euromdb'`
 3. Install packages `composer install`
