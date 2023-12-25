@@ -19,7 +19,7 @@ Clone / Download ZIP and extract
 > Do not create a table called "login"
 7. Generate models and routes `composer generateAll`
 8. Generate keys for JWT `composer generateKeys`
-9. Implement \Model\Auth\LoginUserFactory `app/model/auth/LoginUserFactory.php`
+9. Implement `\Model\Auth\LoginUserFactory` at `app/model/auth/LoginUserFactory.php`
    - `getLoginUserById(int $id)`
    - `getLoginUserByLoginPass(string $login, string $pass)`
 ## Frontend
