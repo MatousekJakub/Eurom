@@ -18,11 +18,11 @@ Clone / Download ZIP and extract
 4. Start docker containers `docker compose up -d`
 5. Open phpMyAdmin `http://localhost:8080` and login with your credentials from step 2.
 6. Make your DB structure
-   > [!WARNING]
-   > Do not create a table called "login"
-7. Generate models and routes `composer generateAll`
-8. Generate keys for JWT `composer generateKeys`
-9. Implement `\Model\Auth\LoginUserFactory` at `app/model/auth/LoginUserFactory.php`
+> [!WARNING]
+> Do not create a table named "login"
+8. Generate models and routes `composer generateAll`
+9. Generate keys for JWT `composer generateKeys`
+10. Implement `\Model\Auth\LoginUserFactory` at `app/model/auth/LoginUserFactory.php`
    - `getLoginUserById(int $id)`
    - `getLoginUserByLoginPass(string $login, string $pass)`
 
