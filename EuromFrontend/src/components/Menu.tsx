@@ -20,7 +20,7 @@ export default function Menu() {
 					<Navbar bg='light' expand={expand} className='mb-3'>
 						<LinkContainer to='/'>
 							<Navbar.Brand href='/'>
-								<Icons.House /> Domů
+								<Icons.House /> Home
 							</Navbar.Brand>
 						</LinkContainer>
 						<Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -45,16 +45,16 @@ export default function Menu() {
 									>
 										<LinkContainer to='/link'>
 											<NavDropdown.Item href='/link'>
-												<Icons.Calculator /> Odkaz
+												<Icons.Calculator /> Link
 											</NavDropdown.Item>
 										</LinkContainer>
 										<LinkContainer to='/link'>
 											<NavDropdown.Item href='/link'>
-												<Icons.ListCheck /> Odkaz
+												<Icons.ListCheck /> Link
 											</NavDropdown.Item>
 										</LinkContainer>
 									</NavDropdown>
-									<Nav.Link href='/login'>Odhlásit</Nav.Link>
+									<Nav.Link href='/login'>Logout</Nav.Link>
 								</Nav>
 							</Offcanvas.Body>
 						</Navbar.Offcanvas>
