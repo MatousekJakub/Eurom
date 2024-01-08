@@ -47,6 +47,8 @@ class LoginHandler
             return 401;
         if ($admin !== 0 && $verify->data->adminLevel > $admin)
             return 403;
+        if ($admin > 0 && $verify->data->adminLevel === 0)
+            return 403;
         LoginAgent::$user = new LoginUser($verify->data->id, $verify->data->adminLevel, $verify->data->login);
         return 200;
     }
